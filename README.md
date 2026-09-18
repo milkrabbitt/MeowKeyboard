@@ -24,7 +24,7 @@ This is **not** the production app source. Production code, lexicons, ranking lo
 
 ## Status
 
-The commercial app is submitted to App Store Review. This repository is a technical showcase; it is not a buildable replacement for the product.
+The commercial app is preparing for App Store release. This repository is a technical showcase; it is not a buildable replacement for the product.
 
 ## License
 
