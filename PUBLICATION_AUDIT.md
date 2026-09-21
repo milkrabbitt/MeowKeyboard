@@ -16,9 +16,9 @@
 
 | Check | Result | Scope / limitation |
 |---|---|---|
-| Visible remote `main` history author metadata | NOT VERIFIED | Must be checked before push; history is not rewritten by this task. |
-| Historic personal identifiers | NOT VERIFIED | No destructive history rewrite was performed. |
+| Visible remote `main` history author metadata | FAIL | Accessible `main` history contains earlier author metadata not aligned with the new public attribution. No history rewrite was performed. |
+| Historic personal identifiers | NOT VERIFIED | Earlier public commit metadata requires separate, explicit history-cleanup authorization if removal is desired. |
 
 ## C. Post-push verification
 
-Pending only after a normal non-force push: inspect repository file list, README rendering, Mermaid rendering, and GitHub language detection.
+NOT VERIFIED: no push was made because the full SwiftPM/XCTest run is blocked by the host sandbox and existing public history needs a separate privacy decision.
