@@ -28,4 +28,4 @@ The commercial app is preparing for App Store release. This repository is a tech
 
 ## License
 
-© 2026 金祯妮. Selected examples and documentation are provided for reference. Production source code and commercial assets are not open-sourced. All rights reserved unless otherwise noted.
+© 2026 Milkyway42. Selected examples and documentation are provided for reference. Production source code and commercial assets are not open-sourced. All rights reserved unless otherwise noted.
