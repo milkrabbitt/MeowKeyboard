@@ -1,7 +1,15 @@
 # Architecture
 
-The SwiftUI main app handles onboarding, preferences, privacy/help entry points, and StoreKit purchasing. The keyboard extension is responsible for composition, candidate presentation, text insertion, and local personalization.
+```mermaid
+flowchart LR
+  App[Main App\nSwiftUI] -->|membership snapshot + settings| Group[App Group\nlocal shared state]
+  Extension[Keyboard Extension\nUIKit] -->|read state| Group
+  Extension --> Proxy[textDocumentProxy]
+  Extension --> Engine[Input Engine\ncomposition + candidates]
+  Engine --> Lexicon[SQLite / local lexical resources]
+  Engine --> Learning[Local personalization]
+  App --> StoreKit[StoreKit 2]
+  StoreKit -->|verified entitlement| App
+```
 
-The main app shares a bounded entitlement snapshot through an App Group. The extension does not initiate purchases and can read the last verified snapshot if StoreKit is temporarily unavailable.
-
-Input data and personalization are designed to remain on device. The public repository intentionally omits the production lexicon, ranking pipeline, and user-data implementation.
+This diagram describes the production architecture at a high level. The complete production implementation, dictionaries, ranking models, and configuration remain private.

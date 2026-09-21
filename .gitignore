@@ -1,0 +1,15 @@
+.DS_Store
+.build/
+.swiftpm/
+xcuserdata/
+DerivedData/
+*.xcarchive
+*.ipa
+*.mobileprovision
+*.p12
+*.cer
+*.sqlite
+*.db
+*.log
+.env
+work/
