@@ -21,4 +21,4 @@
 
 ## C. Post-push verification
 
-PENDING: verify the remote commit, file list, README attribution, and rendered documentation after the audited incremental push.
+PASS: the remote `main` branch was read back after the audited incremental push. The expected examples, tests, and documentation are present; the README attribution remains Milkyway42; no build caches or logs are tracked. Mermaid source is present in `ARCHITECTURE.md`; browser rendering and GitHub language statistics were not independently verified.
