@@ -42,6 +42,8 @@ Purchases and verification belong to the main app; the keyboard extension reads 
 
 Production records and public-example validation are intentionally separated. Historical evaluations are not a new validation of the public package or a current release. See [TESTING.md](TESTING.md).
 
+The latest documented input-experience work is local development version 2.6 (55), recorded on 2026-10-04. Bounded typo recovery is implemented, but errors that still form valid Pinyin remain a major limitation. The fixed Pinyin and T9 evaluations did not regress. Device installation and main-app launch were recorded; software-keyboard touch behavior and iPhone performance have not yet been accepted. [Engineering evidence](docs/ENGINEERING_EVIDENCE.md) separates these records from public-package tests and App Store status.
+
 ## Engineering Challenges
 
 - Keeping raw input and displayed Pinyin separate so literal submission preserves user-entered casing and spacing.
@@ -49,10 +51,11 @@ Production records and public-example validation are intentionally separated. Hi
 - Maintaining a local personalization boundary without uploading input content.
 - Respecting the app/extension process boundary while propagating verified membership state.
 - Providing an offline-tolerant entitlement snapshot without treating it as permanent purchase proof.
+- Recovering mistyped but valid Pinyin without replacing intended input or adding excessive decoding latency; recent isolated experiments did not establish a sufficient quality/performance gain and were not integrated.
 
 ## App Store
 
-See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the carefully scoped, historical shipping record.
+As verified on 2026-10-09, version 2.6 (50) is approved and pending developer release; it is not yet publicly released. Local input-experience development is separate. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
 ## Repository Scope
 

@@ -22,3 +22,20 @@
 ## C. Post-push verification
 
 PASS: the remote `main` branch was read back after the audited incremental push. The expected examples, tests, and documentation are present; the README attribution remains Milkyway42; no build caches or logs are tracked. Mermaid source is present in `ARCHITECTURE.md`; browser rendering and GitHub language statistics were not independently verified.
+
+
+## 2026-10-09 documentation-only update
+
+### A. Current change gate
+
+PASS: updated only the README and engineering/testing/shipping documentation. Public Swift sources and tests are unchanged; the 2026-09-21 5/5 XCTest result is historical and was not rerun for this documentation patch. Added metrics are dated macOS production-development evidence, not measurements of a phone or the public examples. App Store Connect was checked directly: 2.6 (50) is approved and pending developer release, not publicly released.
+
+PASS: reviewed the complete proposed documentation diff and local relative links. No private implementation, corpora, databases, signing material, credentials, internal paths, raw logs, screenshots, or personal identifiers were added. Existing separate commercial development work is outside this public change. Attribution and the intended commit identity remain Milkyway42 with the account's previously verified GitHub noreply address.
+
+### B. Historical identity
+
+OPEN: prior public commit metadata remains unchanged. This update does not remove historical identities or claim that all history is privacy-clean.
+
+### C. Post-push verification
+
+NOT VERIFIED for this new update until its commit is pushed and read back. Earlier post-push verification above applies only to the earlier commit. No new CI or public-package test run is claimed.
