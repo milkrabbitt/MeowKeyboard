@@ -53,4 +53,4 @@ OPEN: historical personal attribution remains; no history rewrite or force push 
 
 ### C. Remote verification
 
-NOT VERIFIED at this pre-commit checkpoint. The remote commit, file list and README will be read back after the normal push; no new CI or browser-rendering result is claimed.
+PASS: documentation commit `85e3f3e8702636abab45ac6f84cb6b5d43bb390b` was pushed normally to the existing public `main` and read back through GitHub on 2026-10-09. Its six-file list matches the audited documentation scope, and the remote README retains Milkyway42. Browser rendering remains NOT VERIFIED for this update; no new CI or public-package test run is claimed.
