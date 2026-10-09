@@ -55,7 +55,7 @@ The latest documented input-experience work is local development version 2.6 (55
 
 ## App Store
 
-As verified on 2026-10-09, version 2.6 (50) is approved and pending developer release; it is not yet publicly released. Local input-experience development is separate. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
+As checked on 2026-10-09, version 2.6 (50) is **Ready for Distribution** in App Store Connect after the owner initiated release. Public storefront availability is still being verified. Local input-experience development is separate. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
 ## Repository Scope
 

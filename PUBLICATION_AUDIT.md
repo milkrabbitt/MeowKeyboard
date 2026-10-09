@@ -28,7 +28,7 @@ PASS: the remote `main` branch was read back after the audited incremental push.
 
 ### A. Current change gate
 
-PASS: updated only the README and engineering/testing/shipping documentation. Public Swift sources and tests are unchanged; the 2026-09-21 5/5 XCTest result is historical and was not rerun for this documentation patch. Added metrics are dated macOS production-development evidence, not measurements of a phone or the public examples. App Store Connect was checked directly: 2.6 (50) is approved and pending developer release, not publicly released.
+PASS: updated only the README and engineering/testing/shipping documentation. Public Swift sources and tests are unchanged; the 2026-09-21 5/5 XCTest result is historical and was not rerun for this documentation patch. Added metrics are dated macOS production-development evidence, not measurements of a phone or the public examples. App Store Connect was checked directly: 2.6 (50) moved from pending developer release to Ready for Distribution after the owner initiated release. Public storefront availability remains unverified; backend and storefront results are reported separately.
 
 PASS: reviewed the complete proposed documentation diff and local relative links. No private implementation, corpora, databases, signing material, credentials, internal paths, raw logs, screenshots, or personal identifiers were added. Existing separate commercial development work is outside this public change. Attribution and the intended commit identity remain Milkyway42 with the account's previously verified GitHub noreply address.
 
@@ -38,4 +38,4 @@ OPEN: prior public commit metadata remains unchanged. This update does not remov
 
 ### C. Post-push verification
 
-NOT VERIFIED for this new update until its commit is pushed and read back. Earlier post-push verification above applies only to the earlier commit. No new CI or public-package test run is claimed.
+PASS: documentation commit `9c6ed65b5d674a90965ee2504d56047ea9bf7511` was pushed normally to `main` and read back from GitHub on 2026-10-09. The remote README retains Milkyway42. Browser rendering remains NOT VERIFIED for this update; no new CI or public-package test run is claimed.
