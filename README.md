@@ -42,7 +42,7 @@ Purchases and verification belong to the main app; the keyboard extension reads 
 
 Production records and public-example validation are intentionally separated. Historical evaluations are not a new validation of the public package or a current release. See [TESTING.md](TESTING.md).
 
-The latest documented input-experience work is local development version 2.6 (55), recorded on 2026-10-04. Bounded typo recovery is implemented, but errors that still form valid Pinyin remain a major limitation. The fixed Pinyin and T9 evaluations did not regress. Device installation and main-app launch were recorded; software-keyboard touch behavior and iPhone performance have not yet been accepted. [Engineering evidence](docs/ENGINEERING_EVIDENCE.md) separates these records from public-package tests and App Store status.
+Local development version 2.6.1 (56), recorded on 2026-10-09, adds bounded local repair candidates for some mistyped but valid Pinyin and fixes a modeled overlapping-keypress loss. Candidate Top-5 coverage improves on internal synthetic cohorts while the original first three candidates are preserved in the unpersonalized comparisons; many errors remain unresolved. Production regressions and a complete Release build passed. Device installation and main-app launch are confirmed; actual software-keyboard touch acceptance remains pending, and iPhone performance has not been measured. [Engineering evidence](docs/ENGINEERING_EVIDENCE.md) separates these records from public-package tests and App Store status.
 
 ## Engineering Challenges
 
@@ -51,11 +51,11 @@ The latest documented input-experience work is local development version 2.6 (55
 - Maintaining a local personalization boundary without uploading input content.
 - Respecting the app/extension process boundary while propagating verified membership state.
 - Providing an offline-tolerant entitlement snapshot without treating it as permanent purchase proof.
-- Recovering mistyped but valid Pinyin without replacing intended input or adding excessive decoding latency; recent isolated experiments did not establish a sufficient quality/performance gain and were not integrated.
+- Recovering mistyped but valid Pinyin without replacing intended input: local repair candidates improve some Top-5 results, while Mac measurements still show additional computation and device performance remains unverified.
 
 ## App Store
 
-As checked on 2026-10-09, version 2.6 (50) is **Ready for Distribution** in App Store Connect after the owner initiated release. Public storefront availability is still being verified. Local input-experience development is separate. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
+As verified on 2026-10-09, version 2.6 (50) is available on the [US App Store](https://apps.apple.com/us/app/id6813336672). This verification does not establish availability in other storefronts. Local input-experience development is separate. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
 ## Repository Scope
 
