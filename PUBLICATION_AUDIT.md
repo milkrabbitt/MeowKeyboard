@@ -54,3 +54,22 @@ OPEN: historical personal attribution remains; no history rewrite or force push 
 ### C. Remote verification
 
 PASS: documentation commit `85e3f3e8702636abab45ac6f84cb6b5d43bb390b` was pushed normally to the existing public `main` and read back through GitHub on 2026-10-09. Its six-file list matches the audited documentation scope, and the remote README retains Milkyway42. Browser rendering remains NOT VERIFIED for this update; no new CI or public-package test run is claimed.
+
+
+## 2026-10-09 manual checks and upload checkpoint
+
+### A. Current documentation change
+
+PASS: only five Markdown documents changed. The complete proposed diff and relative links were reviewed; incremental scans found no sensitive matches. No private source, ranking implementation, dictionaries, device identifiers, raw traces/logs, company materials, signing data or production configuration were added. Public Swift files and tests are unchanged; the historical 5/5 public XCTest result was not rerun or presented as a new test.
+
+PASS: manual checks are explicitly user-reported. The cursor-drag smoothness concern and untested scenarios remain visible. Exported idle Physical Memory Footprint is distinguished from resident memory, typing-load peaks and candidate latency. App Store Connect upload completion, processing, selectable build and saved version association were checked separately; 2.6.1 (56) remains unsubmitted and unreleased. No product screenshots were changed.
+
+PASS: authenticated account and write permission for the existing repository were checked; the default branch remains main. Author and committer use Milkyway42 and the account's previously verified GitHub noreply address. Publication is limited to the audited documentation whitelist and a normal push.
+
+### B. Historical identity
+
+OPEN: earlier public attribution remains in existing history. No history rewrite or force push was performed, and this patch does not claim complete historical privacy cleanup.
+
+### C. This checkpoint's remote verification
+
+NOT VERIFIED at commit preparation: the new documentation has not yet been pushed/read back at this point. Post-push SHA, file-list and README checks will be recorded separately. Browser rendering and new CI execution are not claimed.

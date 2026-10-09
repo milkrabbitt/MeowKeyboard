@@ -33,7 +33,24 @@ A same-Mac optimized baseline/reviewed/reviewed/baseline comparison on the 106-c
 
 These are isolated macOS engine measurements of the reviewed implementation, not timings from the installed iOS extension. Added work remains measurable. Correct-input timing had substantial host variation; there is no established general speedup. In the reviewed cancellation probe, 48 of 48 late cancellations returned no candidates, with P95 0.20 ms from the first positive cancellation callback to return. This does not measure a user's touch-to-cancel delay.
 
-Production unit regressions completed with exit code 0, and Xcode completed a full Release build of the main app and extension as 2.6.1 (56). The change also addresses a state-model failure where overlapping letter presses could discard the second input. Device installation and main-app launch of build 56 are confirmed; software-keyboard touch behavior, iPhone latency and extension memory remain unverified. No public Swift example was changed or retested for this documentation update.
+Production unit regressions completed with exit code 0, and Xcode completed a full Release build of the main app and extension as 2.6.1 (56). The change also addresses a state-model failure where overlapping letter presses could discard the second input. Device installation and main-app launch of build 56 are confirmed. The limited user-reported interaction checks and separate idle-memory observation below do not establish complete device acceptance or typing performance. No public Swift example was changed or retested for this documentation update.
+
+### iPhone manual checks — user-reported, 2026-10-09
+
+The user reported completing these checks on the installed development build:
+
+- Fast typing, local deletion/re-entry, partial candidate selection and deletion recovery.
+- Expanded-candidate scrolling without unintended selection.
+- Repeating delete stopped on release; long-press space moved the cursor.
+- With `nihao` composing, the confirm key submitted the raw letters only; the host action required a subsequent independent tap.
+
+No functional anomaly was reported in those groups, but the user found space-drag cursor movement insufficiently smooth. These are user-reported manual observations, not recorded tool-operated touch tests or a latency measurement. T9 interaction, full-access-disabled behavior, switching host apps/input fields, and purchase restoration were not confirmed in this check.
+
+### iPhone idle-process trace — 2026-10-09
+
+Instruments Activity Monitor recorded the actual keyboard-extension process for **15.94 seconds**. Exported trace data contained six unequal-duration intervals: **Physical Memory Footprint 9.69–9.88 MiB**, with a **row median of 9.80 MiB**. The row median is not a time-weighted median. Thermal state was **Serious** throughout the recorded intervals.
+
+The software keyboard was not displayed or touched during this separate idle recording. These values describe only this idle window, not typing-load memory, an all-session peak, leak behavior or candidate latency. iPhone candidate latency and memory under typing load remain unmeasured. The thermal condition limits cross-run comparisons. No raw trace, device identifier or user-input data is published.
 
 ## Historical production evaluation
 
