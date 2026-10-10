@@ -1,5 +1,13 @@
 # Testing
 
+## Cursor-drag development checkpoint — 2026-10-10
+
+Private production development 2.6.1 (57) retains fractional movement between gesture samples, bounds delayed movement, and maps multiple steps to whole grapheme spans. Candidate/preview reconstruction is deferred during the gesture. The input engine and ranking data are unchanged; the fixed 819/277 engine evaluations were not rerun or presented as new results.
+
+The production unit-regression sequence completed with no assertion failures. Its first attempt stopped at a new test fixture's ambiguous Swift array type; after explicitly typing the fixture, the composition and remaining suites passed. Previously completed engine/meowizer suites were not redundantly rerun. Coverage includes positive/negative sampling, residual movement, large jumps without backlog, Unicode boundaries, invalid numeric input, and existing composition, learning and entitlement regressions. These are macOS assertion programs, not a new public-package XCTest run.
+
+Xcode completed a full iOS Release build; both app and extension products report 2.6.1 (57). No build 57 Archive, upload or review submission was made. The development device was disconnected at this checkpoint, so installation, actual touch smoothness, host callback timing, typing-load latency and memory remain unverified. The movement cap is a conservative bound, not a phone-calibrated performance claim.
+
 ## Public examples
 
 Run `swift test` from this repository. The package is intentionally pure Swift on macOS; UIKit extension code is conditionally compiled and requires an iOS SDK build outside SwiftPM.

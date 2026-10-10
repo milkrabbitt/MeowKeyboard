@@ -57,6 +57,8 @@ Release candidate 2.6.1 (56), recorded on 2026-10-09, adds bounded local repair 
 
 As verified on 2026-10-09, version 2.6 (50) is available on the [US App Store](https://apps.apple.com/us/app/id6813336672). This verification does not establish availability in other storefronts. Release candidate 2.6.1 (56) has been uploaded, processed and selected in a draft configured for manual release; it has not been submitted for review or released. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
+**Development checkpoint (2026-10-10):** local 2.6.1 (57) includes bounded cursor-drag movement and deferred candidate/preview refresh during dragging. Production unit regressions and the full iOS Release build passed. Device installation and touch smoothness for build 57 remain unverified; the uploaded version draft still uses build 56. These changes do not modify the input engine or the public Swift examples.
+
 ## Repository Scope
 
 This public repository contains selected implementation examples, architecture documentation, testing methodology, and no product screenshots.

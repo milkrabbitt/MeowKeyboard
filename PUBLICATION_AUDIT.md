@@ -1,5 +1,23 @@
 # Publication Audit
 
+## 2026-10-10 cursor-drag documentation update
+
+### A. Incremental publication gate
+
+PASS: only five Markdown files in this documentation update, including this audit entry. The complete added-text diff and relative links were checked. No production implementation, company documents, private information, source paths, device identifiers, logs, certificates or assets are published. Public Swift examples and tests are unchanged; no new public-package test or CI result is claimed.
+
+PASS: production build 57 results are separated from device acceptance and build 56's existing upload. Actual Xcode Release products report matching app/extension versions. Production regression logs include the initial test-fixture compilation error and the successful corrected remainder; prior completed suites were retained as evidence, not silently described as one uninterrupted run.
+
+PASS: the current authenticated account, existing public repository, default branch and write permission were verified. The intended ordinary commit uses Milkyway42 and the previously verified account noreply address. No history rewrite or product metadata changes are included.
+
+### B. Existing history
+
+OPEN: historical identity residue remains outside this update; no removal or complete historical privacy clearance is claimed.
+
+### C. Remote verification
+
+NOT VERIFIED at preparation time: push and remote byte comparison follow the commit. Browser rendering and CI are not part of this documentation update. A verified receipt will be retained locally after publication.
+
 ## A. Current proposed content
 
 | Check | Result | Scope / limitation |

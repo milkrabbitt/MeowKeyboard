@@ -25,3 +25,10 @@
 | Shipping | App Store Connect status and US public storefront inspection | 2.6 (50) Ready for Distribution and available on the US App Store. Other storefront availability is not inferred. New 2.6.1 is a draft, not an approved or released update. |
 
 This is a sanitized evidence summary. Production source, private corpora, raw logs, device identifiers, and internal file locations are not published. The public package is independent from the commercial engine. See [App Store shipping](../APP_STORE_SHIPPING.md) for the separately scoped release record.
+
+## Cursor-drag follow-up — 2026-10-10
+
+- Source inspection found sample-dependent discarded travel and repeated candidate-row rebuilding during cursor movement.
+- Local development build 57 preserves sub-step travel, bounds delayed jumps and converts movement through whole graphemes. UI refresh is deferred until gesture completion or cancellation; document/selection changes still cancel the gesture.
+- Production assertion regressions and the full iOS Release build passed after a test-fixture type correction. This is not evidence of phone smoothness or a new public XCTest run.
+- Build 57 device installation and touch validation remain pending because the device was disconnected. No new iPhone latency, memory, engine-quality or App Store upload result is claimed.
