@@ -31,4 +31,4 @@ This is a sanitized evidence summary. Production source, private corpora, raw lo
 - Source inspection found sample-dependent discarded travel and repeated candidate-row rebuilding during cursor movement.
 - Local development build 57 preserves sub-step travel, bounds delayed jumps and converts movement through whole graphemes. UI refresh is deferred until gesture completion or cancellation; document/selection changes still cancel the gesture.
 - Production assertion regressions and the full iOS Release build passed after a test-fixture type correction. This is not evidence of phone smoothness or a new public XCTest run.
-- Build 57 device installation and touch validation remain pending because the device was disconnected. No new iPhone latency, memory, engine-quality or App Store upload result is claimed.
+- After the device reconnected, Xcode installed build 57 and its device list confirmed the version. Touch validation remains pending. No new iPhone latency, memory, engine-quality or App Store upload result is claimed.

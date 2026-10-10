@@ -16,7 +16,7 @@ OPEN: historical identity residue remains outside this update; no removal or com
 
 ### C. Remote verification
 
-NOT VERIFIED at preparation time: push and remote byte comparison follow the commit. Browser rendering and CI are not part of this documentation update. A verified receipt will be retained locally after publication.
+PASS: documentation commit `d8b160ef119a3d967ce46e182a5b437a2a4d040a` was pushed normally and all five remote documents matched the audited local files byte-for-byte. README attribution remains Milkyway42. This follow-up records subsequent device installation; touch smoothness remains unverified. Its five-file diff remains documentation-only. Browser rendering and CI were not rerun.
 
 ## A. Current proposed content
 

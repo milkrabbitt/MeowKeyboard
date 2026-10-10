@@ -12,4 +12,4 @@ A 2.6.1 version draft has been created with review notes and manual release sele
 
 Archive creation, distribution validation, upload, processing, review approval, and public release are separate milestones. A later development build is not an App Store release unless its own submission and release are independently confirmed.
 
-**Local follow-up (2026-10-10):** 2.6.1 (57) passed production unit regressions and a complete iOS Release build for cursor-drag changes. It has not been installed and verified on the development phone, archived or uploaded. This does not replace the previously uploaded build 56 or change its draft/review state. The released build 50 remains separate.
+**Local follow-up (2026-10-10):** 2.6.1 (57) passed production unit regressions and a complete iOS Release build for cursor-drag changes. Xcode installation on the development phone is confirmed; touch acceptance remains pending. It has not been archived or uploaded. This does not replace the previously uploaded build 56 or change its draft/review state. The released build 50 remains separate.

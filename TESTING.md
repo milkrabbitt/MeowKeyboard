@@ -6,7 +6,7 @@ Private production development 2.6.1 (57) retains fractional movement between ge
 
 The production unit-regression sequence completed with no assertion failures. Its first attempt stopped at a new test fixture's ambiguous Swift array type; after explicitly typing the fixture, the composition and remaining suites passed. Previously completed engine/meowizer suites were not redundantly rerun. Coverage includes positive/negative sampling, residual movement, large jumps without backlog, Unicode boundaries, invalid numeric input, and existing composition, learning and entitlement regressions. These are macOS assertion programs, not a new public-package XCTest run.
 
-Xcode completed a full iOS Release build; both app and extension products report 2.6.1 (57). No build 57 Archive, upload or review submission was made. The development device was disconnected at this checkpoint, so installation, actual touch smoothness, host callback timing, typing-load latency and memory remain unverified. The movement cap is a conservative bound, not a phone-calibrated performance claim.
+Xcode completed a full iOS Release build; both app and extension products report 2.6.1 (57). No build 57 Archive, upload or review submission was made. The device initially appeared disconnected, then reconnected. Xcode installed the existing Release build and its device list confirmed version 57. Actual touch smoothness, host callback timing, typing-load latency and memory remain unverified. The movement cap is a conservative bound, not a phone-calibrated performance claim.
 
 ## Public examples
 
