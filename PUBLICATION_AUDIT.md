@@ -91,3 +91,15 @@ OPEN: earlier public attribution remains in existing history. No history rewrite
 ### C. This checkpoint's remote verification
 
 PASS: commit `d74c807bc4b466cf275441228b91fbdb065cbd7e` was pushed normally to main and read back through GitHub on 2026-10-09. All five changed remote documents match the audited local files, and the README retains Milkyway42. GitHub language data reports Swift (5,891 bytes). Browser rendering remains NOT VERIFIED for this documentation update; no new CI execution is claimed. This receipt changes only the audit document.
+
+
+## 2026-10-10 user feedback and bounded device observation
+
+### A. Incremental publication gate
+PASS: four Markdown files only; no Swift, assets, production data, configuration, private traces, identities or filing materials added. The full incremental diff and relative links were checked. User-reported improvement is explicitly provisional; the short device memory observation is not a typing benchmark or version comparison. No new XCTest or engine-quality claim is made. Existing authenticated owner/write permission and local Milkyway42/account noreply identity were verified.
+
+### B. Existing history
+OPEN: historical personal attribution remains unchanged; no history rewriting.
+
+### C. Remote display
+NOT VERIFIED at commit preparation: remote read-back receipt is retained locally after normal push. Browser rendering and CI are not claimed for this documentation-only update.
