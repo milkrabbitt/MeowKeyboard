@@ -103,3 +103,14 @@ OPEN: historical personal attribution remains unchanged; no history rewriting.
 
 ### C. Remote display
 NOT VERIFIED at commit preparation: remote read-back receipt is retained locally after normal push. Browser rendering and CI are not claimed for this documentation-only update.
+
+## 2026-10-12 release checkpoint documentation
+
+### A. Incremental publication gate
+PASS: documentation-only changes record the separately verified Archive, distribution validation and upload milestones for build 57. Apple processing and draft association are reported separately. No public Swift code or tests changed, and no new XCTest or phone-performance result is claimed. No production code, data, configuration, raw logs, filing materials, signing assets or private identifiers are included. The complete incremental diff and links are checked before committing. Current account/write permission and local Milkyway42/account noreply identity were verified.
+
+### B. Existing history
+OPEN: historical identity residue is unchanged; no history rewrite or complete privacy-clearance claim.
+
+### C. Remote verification
+NOT VERIFIED: this incremental update has not yet been pushed or read back. Browser rendering and CI were not rerun.

@@ -55,9 +55,9 @@ Release candidate 2.6.1 (56), recorded on 2026-10-09, adds bounded local repair 
 
 ## App Store
 
-As verified on 2026-10-09, version 2.6 (50) is available on the [US App Store](https://apps.apple.com/us/app/id6813336672). This verification does not establish availability in other storefronts. Release candidate 2.6.1 (56) has been uploaded, processed and selected in a draft configured for manual release; it has not been submitted for review or released. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
+As verified on 2026-10-09, version 2.6 (50) is available on the [US App Store](https://apps.apple.com/us/app/id6813336672). This verification does not establish availability in other storefronts. As verified on 2026-10-12, release candidate 2.6.1 (57) has been uploaded, processed and selected in a draft configured for manual release; it has not been submitted for review or released. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
-**Development checkpoint (2026-10-10):** local 2.6.1 (57) includes bounded cursor-drag movement and deferred candidate/preview refresh during dragging. Production unit regressions and the full iOS Release build passed. Build 57 is installed on the development phone. The user reports some improvement in cursor dragging and provisionally accepts the current behavior, but smoothness remains insufficient; further cursor tuning is paused. The uploaded version draft still uses build 56. These changes do not modify the input engine or the public Swift examples.
+**Development checkpoint (2026-10-10):** local 2.6.1 (57) includes bounded cursor-drag movement and deferred candidate/preview refresh during dragging. Production unit regressions and the full iOS Release build passed. Build 57 is installed on the development phone. The user reports some improvement in cursor dragging and provisionally accepts the current behavior, but smoothness remains insufficient; further cursor tuning is paused. As verified on 2026-10-12, build 57 has passed distribution validation and uploaded successfully; Apple processing is complete and build 57 is selected in the saved 2.6.1 draft. These changes do not modify the input engine or the public Swift examples.
 
 ## Repository Scope
 

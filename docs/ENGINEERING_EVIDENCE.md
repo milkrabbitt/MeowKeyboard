@@ -32,3 +32,7 @@ This is a sanitized evidence summary. Production source, private corpora, raw lo
 - Local development build 57 preserves sub-step travel, bounds delayed jumps and converts movement through whole graphemes. UI refresh is deferred until gesture completion or cancellation; document/selection changes still cancel the gesture.
 - Production assertion regressions and the full iOS Release build passed after a test-fixture type correction. This is not evidence of phone smoothness or a new public XCTest run.
 - After the device reconnected, Xcode installed build 57 and its device list confirmed the version. The user reports some improvement in cursor dragging and provisionally accepts it, with remaining smoothness limitations; further cursor tuning is paused. A short uncontrolled-workload device memory observation is scoped in TESTING.md. No candidate-latency, engine-quality or new App Store upload result is claimed.
+
+## Release checkpoint — 2026-10-12
+
+The unchanged build 57 source was checked against its recorded source snapshot. A complete Release Archive and App Store distribution validation passed. Upload succeeded without errors, and App Store Connect shows build 57 ready to submit after processing. Build 57 selection in the 2.6.1 draft was saved and confirmed after reloading. Updated release/review notes are saved and manual release remains selected. No review submission or release was performed. Xcode confirms the connected development phone has build 57 installed; this is not a new touch test or phone-performance result.
