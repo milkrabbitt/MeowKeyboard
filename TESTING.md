@@ -94,3 +94,11 @@ The same development record confirms a complete Xcode build, device installation
 ## Verification boundary
 
 The macOS SwiftPM run does not compile or validate UIKit behavior on iOS, a live keyboard extension, StoreKit sandbox purchases, signing, or real-device interaction. Those remain outside this public package test result.
+
+
+## Production membership follow-up — 2026-10-12, development 2.6.1 (58)
+
+- The complete production assertion-regression command exited 0, including input/composition/learning and membership readiness checks. No unchanged fixed-corpus evaluation was rerun.
+- Xcode ran **2 XCTest cases, 0 failures, 6.021 seconds** on a physical iPhone using StoreKitTest. Coverage includes product-load timeout/retry, unavailable-product feedback, delayed/background startup presentation, trial eligibility, purchase cancellation/success, pending approval, restoration, restart, cancellation of renewal while still entitled, refund revocation and expiry. These are production tests, separate from the public package's five historical tests.
+- The full iOS Release build, device installation and main-app launch passed. Mirroring showed the minimal cold-start membership sheet with the StoreKit-localized annual price. Tapping its purchase action displayed Apple's actual Sandbox confirmation, explicitly marked test-only/no charge. Authentication was handed to the owner, who subsequently confirmed successful Sandbox purchase and membership unlock. This completion is user-reported, not a tool-observed transaction receipt.
+- This does not establish a new keyboard touch pass, candidate-latency measurement, typing-load memory benchmark, or real-money purchase test. Cursor tuning remains paused with provisional user acceptance.

@@ -114,3 +114,14 @@ OPEN: historical identity residue is unchanged; no history rewrite or complete p
 
 ### C. Remote verification
 PASS: commit `0d89327c0a660fc62abda7e94c7e042586f0513b` was pushed normally and all four changed documents were read back byte-for-byte from the remote main branch. README attribution remains Milkyway42. This audit-only receipt adds no code or private material. Browser rendering and CI were not rerun.
+
+## 2026-10-12 membership repair documentation
+
+### A. Incremental publication gate
+PASS: five Markdown documents only. The complete incremental diff was reviewed and scanned for private paths, personal contact details and credential patterns, with no matches. No code, assets, production data/configuration, raw logs, traces or signing materials are included. Production assertions and two physical-device StoreKitTest cases are distinguished from public-package tests; native Sandbox entry was tool-observed and purchase completion is owner-reported. No new keyboard-performance claim is made. Existing Milkyway42/account noreply identity is retained. Relative links remain unchanged.
+
+### B. Existing history
+OPEN: historical identity residue is unchanged. No history rewrite or complete privacy-cleanup claim.
+
+### C. Remote verification
+NOT VERIFIED before push: remote read-back will be recorded locally after ordinary publication. Browser rendering and CI were not rerun for this documentation-only update.

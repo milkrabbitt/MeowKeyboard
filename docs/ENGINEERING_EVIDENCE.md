@@ -36,3 +36,13 @@ This is a sanitized evidence summary. Production source, private corpora, raw lo
 ## Release checkpoint — 2026-10-12
 
 The unchanged build 57 source was checked against its recorded source snapshot. A complete Release Archive and App Store distribution validation passed. Upload succeeded without errors, and App Store Connect shows build 57 ready to submit after processing. Build 57 selection in the 2.6.1 draft was saved and confirmed after reloading. Updated release/review notes are saved and manual release remains selected. No review submission or release was performed. Xcode confirms the connected development phone has build 57 installed; this is not a new touch test or phone-performance result.
+
+
+## Membership repair checkpoint — 2026-10-12
+
+| Area | Evidence | Limitation |
+|---|---|---|
+| Startup and product availability | Private-source changes and full assertion regressions, development 2.6.1 (58) | No change to product type, price or entitlements; no input-engine changes. |
+| StoreKit lifecycle | Xcode StoreKitTest on a physical iPhone: 2 XCTest cases, 0 failures | Test-only transactions, not production billing or a new public-package test. |
+| Native purchase entry | Actual device mirroring: minimal cold-start sheet and Apple Sandbox confirmation displayed | The owner confirmed successful Sandbox purchase and unlock; completion is user-reported, not a tool-observed receipt. |
+| Build and distribution | Full Release build, device installation, Archive and distribution validation passed | Upload succeeded without errors; Apple processing is complete and build 58 is ready to submit; build 58 is selected in the saved 2.6.1 draft and was confirmed after reloading. Manual release is retained. No review submission or release. |

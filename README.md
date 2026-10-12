@@ -59,6 +59,8 @@ As verified on 2026-10-09, version 2.6 (50) is available on the [US App Store](h
 
 **Development checkpoint (2026-10-10):** local 2.6.1 (57) includes bounded cursor-drag movement and deferred candidate/preview refresh during dragging. Production unit regressions and the full iOS Release build passed. Build 57 is installed on the development phone. The user reports some improvement in cursor dragging and provisionally accepts the current behavior, but smoothness remains insufficient; further cursor tuning is paused. As verified on 2026-10-12, build 57 has passed distribution validation and uploaded successfully; Apple processing is complete and build 57 is selected in the saved 2.6.1 draft. These changes do not modify the input engine or the public Swift examples.
 
+**Membership follow-up (2026-10-12):** development build 58 fixes a silent purchase failure when the product is unavailable and separates cold-start membership presentation from price loading. Product requests now coalesce, time out with retry feedback, and reject stale replies. Existing subscription terms and keyboard entitlements are unchanged. Production assertion regressions passed; two StoreKitTest XCTest cases passed on a physical iPhone. The real Sandbox purchase sheet was displayed; the owner subsequently confirmed successful Sandbox purchase and membership unlock. This is not a new public-package test or an App Store release.
+
 ## Repository Scope
 
 This public repository contains selected implementation examples, architecture documentation, testing methodology, and no product screenshots.
