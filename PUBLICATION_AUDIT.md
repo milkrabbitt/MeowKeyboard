@@ -125,3 +125,15 @@ OPEN: historical identity residue is unchanged. No history rewrite or complete p
 
 ### C. Remote verification
 NOT VERIFIED before push: remote read-back will be recorded locally after ordinary publication. Browser rendering and CI were not rerun for this documentation-only update.
+
+
+## 2026-10-27 incremental documentation verification
+
+### A. Current change
+PASS: five Markdown documents only; public Swift code, tests and assets remain unchanged. This patch distinguishes current source/device/backend observations from dated production regressions and evaluation records. No new test run, controlled keyboard comparison, regional release or government approval is claimed. The private source was read only and matched its saved snapshot. The incremental diff is checked for private paths, contact details, credentials, identifiers, raw logs and filing materials before ordinary publication. Repository owner/write permission, main default branch and local Milkyway42/account noreply identity are verified.
+
+### B. Existing history
+OPEN: historical identity residue is unchanged. No history rewrite or force push.
+
+### C. Remote verification
+NOT VERIFIED before push. Remote SHA and changed-file content will be checked after publication; no new browser rendering or CI result is claimed.

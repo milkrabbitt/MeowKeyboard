@@ -55,11 +55,13 @@ Release candidate 2.6.1 (56), recorded on 2026-10-09, adds bounded local repair 
 
 ## App Store
 
-As verified on 2026-10-09, version 2.6 (50) is available on the [US App Store](https://apps.apple.com/us/app/id6813336672). This verification does not establish availability in other storefronts. As verified on 2026-10-12, release candidate 2.6.1 (57) has been uploaded, processed and selected in a draft configured for manual release; it has not been submitted for review or released. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
+As verified on 2026-10-09, version 2.6 (50) is available on the [US App Store](https://apps.apple.com/us/app/id6813336672). This verification does not establish availability in other storefronts. As verified in App Store Connect on 2026-10-27, version 2.6 remains Ready for Distribution and the 2.6.1 draft still selects build 58. Local development build 59 is separate and has not been uploaded. No new review submission or release was performed. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
 **Development checkpoint (2026-10-10):** local 2.6.1 (57) includes bounded cursor-drag movement and deferred candidate/preview refresh during dragging. Production unit regressions and the full iOS Release build passed. Build 57 is installed on the development phone. The user reports some improvement in cursor dragging and provisionally accepts the current behavior, but smoothness remains insufficient; further cursor tuning is paused. As verified on 2026-10-12, build 57 has passed distribution validation and uploaded successfully; Apple processing is complete and build 57 is selected in the saved 2.6.1 draft. These changes do not modify the input engine or the public Swift examples.
 
 **Membership follow-up (2026-10-12):** development build 58 fixes a silent purchase failure when the product is unavailable and separates cold-start membership presentation from price loading. Product requests now coalesce, time out with retry feedback, and reject stale replies. Existing subscription terms and keyboard entitlements are unchanged. Production assertion regressions passed; two StoreKitTest XCTest cases passed on a physical iPhone. The real Sandbox purchase sheet was displayed; the owner subsequently confirmed successful Sandbox purchase and membership unlock. This is not a new public-package test or an App Store release.
+
+**Latest development check (2026-10-27):** private source remains 2.6.1 (59), matching its saved source snapshot. Xcode confirms build 59 on the connected development iPhone. Historical build-59 records cover single-character pronunciation reachability and T9 candidate identity fixes; common-input ranking and typo recovery remain below the internal quality targets. Phone candidate latency and typing-load memory are still unmeasured. See [TESTING.md](TESTING.md) for dated results and limitations.
 
 ## Repository Scope
 

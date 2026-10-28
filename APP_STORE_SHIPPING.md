@@ -16,3 +16,8 @@ Archive creation, distribution validation, upload, processing, review approval, 
 
 
 **Membership follow-up (2026-10-12):** build 57 is retained but paused as the final candidate after membership issues were reported. Incremental build 2.6.1 (58) passed production assertion regressions, two physical-device StoreKitTest cases, the complete Release build, device installation/main-app launch, Archive and App Store distribution validation. Upload succeeded without errors; Apple processing is complete and build 58 is ready to submit; build 58 is selected in the saved 2.6.1 draft and was confirmed after reloading. Manual release is retained. The existing annual product is approved; terms, price, subscription configuration and entitlements were not changed. No review submission or release was performed. Sandbox completion and additional device acceptance limitations are recorded in [TESTING.md](TESTING.md).
+
+
+## Backend recheck — 2026-10-27
+
+App Store Connect still shows version 2.6 Ready for Distribution and 2.6.1 Prepare for Submission with build 58 selected. Local 2.6.1 (59) is installed on the development phone and remains unuploaded. No build, review submission or release was performed during this recheck. The US public-storefront verification above remains dated 2026-10-09; a fresh public-storefront lookup was unavailable through the current verification tool. Do not interpret the backend status as a new all-region availability check. Regional compliance information was supplemented, but the mainland availability row still showed a compliance block during the check; mainland availability is not claimed.

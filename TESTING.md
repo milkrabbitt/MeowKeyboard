@@ -102,3 +102,18 @@ The macOS SwiftPM run does not compile or validate UIKit behavior on iOS, a live
 - Xcode ran **2 XCTest cases, 0 failures, 6.021 seconds** on a physical iPhone using StoreKitTest. Coverage includes product-load timeout/retry, unavailable-product feedback, delayed/background startup presentation, trial eligibility, purchase cancellation/success, pending approval, restoration, restart, cancellation of renewal while still entitled, refund revocation and expiry. These are production tests, separate from the public package's five historical tests.
 - The full iOS Release build, device installation and main-app launch passed. Mirroring showed the minimal cold-start membership sheet with the StoreKit-localized annual price. Tapping its purchase action displayed Apple's actual Sandbox confirmation, explicitly marked test-only/no charge. Authentication was handed to the owner, who subsequently confirmed successful Sandbox purchase and membership unlock. This completion is user-reported, not a tool-observed transaction receipt.
 - This does not establish a new keyboard touch pass, candidate-latency measurement, typing-load memory benchmark, or real-money purchase test. Cursor tuning remains paused with provisional user acceptance.
+
+
+## Basic input checkpoint: historical build 59, checked 2026-10-27
+
+These are private production records from 2026-10-12, not a new test run, not public-package XCTest results and not a validation of build 50. On 2026-10-27 the current private source matched its saved build-59 snapshot, and Xcode showed build 59 installed on the connected development iPhone. No unchanged evaluation was rerun.
+
+| Fixed macOS engine set | Cases | Top-1 | Top-3 | Top-5 |
+|---|---:|---:|---:|---:|
+| 26-key, build 59 | 819 | 48.72% | 60.07% | 63.98% |
+| T9, build 59 | 277 | 62.09% | 76.17% | 79.78% |
+| T9, saved pre-change baseline | 277 | 61.01% | 74.73% | 78.34% |
+
+The 26-key result was unchanged against the saved pre-change evaluator; T9 lost no previously correct first choices in that comparison. All 8,454 readings in the separate reference-derived reachability corpus were reachable through full Pinyin, T9 and reading-specific T9 paths. This measures access to complete candidate lists, not first-choice accuracy. The owner reported that the previously missing character under `huan` became available on the phone; this is not a full touch-test pass. Daily diagnostic fixtures with two later-discovered contextual pronunciation errors remain provisional and are not used here to claim a quality gain.
+
+The internal Top-1/3/5 targets remain 75%/90%/95% and are not met. Long abbreviated/mixed input and valid-Pinyin typo recovery remain open. Production assertion regressions and the full iOS Release build passed in the dated records. The recorded macOS P95 was approximately 39–41 ms for full Pinyin and 20 ms for T9; these are engine timings, not phone latency. A 24.887-second idle device trace showed Memory 15.80 MiB in the selected process row: this is neither a typing-load peak nor a declared physical footprint. Phone candidate P50/P95, typing-load memory and a controlled Apple-keyboard comparison remain unverified. Cursor tuning remains paused with provisional user acceptance and remaining smoothness limitations.

@@ -46,3 +46,11 @@ The unchanged build 57 source was checked against its recorded source snapshot. 
 | StoreKit lifecycle | Xcode StoreKitTest on a physical iPhone: 2 XCTest cases, 0 failures | Test-only transactions, not production billing or a new public-package test. |
 | Native purchase entry | Actual device mirroring: minimal cold-start sheet and Apple Sandbox confirmation displayed | The owner confirmed successful Sandbox purchase and unlock; completion is user-reported, not a tool-observed receipt. |
 | Build and distribution | Full Release build, device installation, Archive and distribution validation passed | Upload succeeded without errors; Apple processing is complete and build 58 is ready to submit; build 58 is selected in the saved 2.6.1 draft and was confirmed after reloading. Manual release is retained. No review submission or release. |
+
+
+## Basic input and release separation — checked 2026-10-27
+
+- Current private source matches the saved local build-59 manifest. Xcode independently lists the connected development phone with build 59 installed. No new input-engine change, build or test run is claimed.
+- Historical 2026-10-12 records separate complete single-character reading reachability from ranking quality. Fixed-set figures and the unresolved quality target are reported in TESTING.md. Rejected all-reading sentence-pool and forced single-character-priority experiments were not merged.
+- The owner reported the missing `huan` character is now reachable on the phone. Full editing acceptance, controlled native-keyboard comparison and phone performance remain unverified. Idle process Memory is not relabeled as typing-load peak or candidate latency.
+- Backend version 2.6 remains Ready for Distribution; the unsubmitted 2.6.1 draft selects build 58. Local build 59 is not an uploaded release. Compliance application submission is not approval or regional storefront availability. No private filing materials or identifiers are included.
