@@ -137,3 +137,15 @@ OPEN: historical identity residue is unchanged. No history rewrite or force push
 
 ### C. Remote verification
 NOT VERIFIED before push. Remote SHA and changed-file content will be checked after publication; no new browser rendering or CI result is claimed.
+
+
+## 2026-10-27 regional availability documentation follow-up
+
+### A. Incremental gate
+PASS: four Markdown documents only. The change replaces an outdated regional-availability limitation with dated App Store Connect and official public-lookup evidence, while retaining the device-download and development-build limits. No source, resources, filing records, contact details, infrastructure credentials or raw logs are included. Public Swift files are unchanged; no new XCTest run is claimed. The incremental diff and staged file allowlist are checked before normal publication.
+
+### B. Existing history
+OPEN: historical identity residue remains outside this patch; no history rewrite.
+
+### C. Remote verification
+NOT VERIFIED before push; the remote SHA and exact changed-file content will be checked after publication. No new browser-rendering or CI result is claimed.

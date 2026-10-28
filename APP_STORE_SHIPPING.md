@@ -21,3 +21,8 @@ Archive creation, distribution validation, upload, processing, review approval, 
 ## Backend recheck — 2026-10-27
 
 App Store Connect still shows version 2.6 Ready for Distribution and 2.6.1 Prepare for Submission with build 58 selected. Local 2.6.1 (59) is installed on the development phone and remains unuploaded. No build, review submission or release was performed during this recheck. The US public-storefront verification above remains dated 2026-10-09; a fresh public-storefront lookup was unavailable through the current verification tool. Do not interpret the backend status as a new all-region availability check. Regional compliance information was supplemented, but the mainland availability row still showed a compliance block during the check; mainland availability is not claimed.
+
+
+## Regional availability follow-up — 2026-10-27
+
+After the compliance field was saved, a refreshed Asia-Pacific availability table shows China mainland **Available**. Apple’s public lookup independently returns the existing app, correct bundle identifier and version 2.6 for both China mainland and the US. This supersedes the earlier same-day mainland block above. The public listing is verified; an on-device mainland download transaction was not performed. No new review submission, release, price change or replacement build was required. The development/draft distinction remains unchanged.

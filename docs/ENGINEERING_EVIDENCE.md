@@ -54,3 +54,8 @@ The unchanged build 57 source was checked against its recorded source snapshot. 
 - Historical 2026-10-12 records separate complete single-character reading reachability from ranking quality. Fixed-set figures and the unresolved quality target are reported in TESTING.md. Rejected all-reading sentence-pool and forced single-character-priority experiments were not merged.
 - The owner reported the missing `huan` character is now reachable on the phone. Full editing acceptance, controlled native-keyboard comparison and phone performance remain unverified. Idle process Memory is not relabeled as typing-load peak or candidate latency.
 - Backend version 2.6 remains Ready for Distribution; the unsubmitted 2.6.1 draft selects build 58. Local build 59 is not an uploaded release. Compliance application submission is not approval or regional storefront availability. No private filing materials or identifiers are included.
+
+
+## Public storefront follow-up — 2026-10-27
+
+A refreshed App Store Connect availability row shows China mainland Available. Apple’s public lookup returns the existing app and version 2.6 in both China mainland and the US. This is a public-listing observation, separate from installing the app on a mainland-storefront device and from releasing development build 59. No new keyboard test or release is implied.
