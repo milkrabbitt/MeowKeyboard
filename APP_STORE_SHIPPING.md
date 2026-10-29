@@ -28,3 +28,6 @@ App Store Connect still shows version 2.6 Ready for Distribution and 2.6.1 Prepa
 After the compliance field was saved, a refreshed Asia-Pacific availability table shows China mainland **Available**. Apple’s public lookup independently returns the existing app, correct bundle identifier and version 2.6 for both China mainland and the US. This supersedes the earlier same-day mainland block above. The public listing is verified; an on-device mainland download transaction was not performed. No new review submission, release, price change or replacement build was required. The development/draft distinction remains unchanged.
 
 **Public recheck (2026-10-29):** Apple's public lookup again returns version 2.6 in both storefronts. Authenticated backend draft status was not established by that public lookup and must be checked separately. No new build or release is implied.
+
+
+**Authenticated follow-up (2026-10-29):** App Store Connect confirms 2.6 Ready for Distribution, with build 58 selected in the 2.6.1 Prepare for Submission draft and manual release retained. Regional availability lists 175 available territories. Official administrative records now show the company subject, website and iOS app registrations approved; these administrative approvals do not mean Apple organization conversion is complete. No new build, review submission or release was performed.
