@@ -59,3 +59,8 @@ The unchanged build 57 source was checked against its recorded source snapshot. 
 ## Public storefront follow-up — 2026-10-27
 
 A refreshed App Store Connect availability row shows China mainland Available. Apple’s public lookup returns the existing app and version 2.6 in both China mainland and the US. This is a public-listing observation, separate from installing the app on a mainland-storefront device and from releasing development build 59. No new keyboard test or release is implied.
+
+## Follow-up — 2026-10-29
+
+- Apple's public lookup again confirms version 2.6 listed in China mainland and the US; this is not an authenticated draft-status check.
+- The owner confirmed approximately 20 seconds of physical input within the 2026-10-27 build-59 device capture. The Memory column snapshots and export/latency limits are documented in [TESTING.md](../TESTING.md); no peak, latency target or optimization gain is inferred.

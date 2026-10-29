@@ -149,3 +149,14 @@ OPEN: historical identity residue remains outside this patch; no history rewrite
 
 ### C. Remote verification
 NOT VERIFIED before push; the remote SHA and exact changed-file content will be checked after publication. No new browser-rendering or CI result is claimed.
+
+## 2026-10-29 incremental evidence clarification
+
+### A. Current patch
+PASS: five Markdown documents only, with the complete incremental diff, local links and sensitive-pattern scan checked. Dated public-storefront recheck and owner-confirmed workload scope, retaining unverified peak/latency and backend-status boundaries. No Swift or production code, raw trace, device identifier, private path, filing data or credential is included. No new build or XCTest result is claimed. Only the reviewed five-file allowlist is staged for ordinary publication.
+
+### B. Existing history
+OPEN: historical identity residue is unchanged; no history rewrite.
+
+### C. Remote verification
+NOT VERIFIED before push. Remote SHA and changed-file contents are checked after publication; page rendering and CI are not newly claimed.
