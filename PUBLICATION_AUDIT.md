@@ -165,3 +165,8 @@ NOT VERIFIED before push. Remote SHA and changed-file contents are checked after
 ## 2026-10-29 authenticated status follow-up
 
 A. PASS: two Markdown files only; dated shipping status and this audit entry. No code, filing identifiers, private documents, logs, contact details or credentials. No new tests claimed. B. OPEN: historical identity residue unchanged. C. Remote contents to be checked after ordinary push; no new rendering or CI claim.
+
+
+## 2026-10-29 current-source regression and draft evidence
+
+A. PASS: this incremental patch changes three Markdown files only. It separates freshly executed assertion tests from historical evaluations, public-package XCTest, device acceptance and Apple payment testing. No production implementation, raw logs, paths, account details or credentials are included. B. OPEN: existing historical identity residue remains unchanged. C. Pending ordinary push and remote-content verification; page rendering and CI are not newly claimed.

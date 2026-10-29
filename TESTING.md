@@ -123,3 +123,8 @@ The internal Top-1/3/5 targets remain 75%/90%/95% and are not met. Long abbrevia
 A separate Activity Monitor capture on 2026-10-27 attached to the live build-59 keyboard extension on an iPhone 15 Pro running iOS 26.7.1. It lasted 109.86 seconds, including idle/waiting time. On 2026-10-29 the owner explicitly confirmed approximately 20 seconds of physical typing, candidate selection and local editing during that capture; the whole recording is not classified as active typing.
 
 The tool-observed **Memory column snapshots** were 22.27, 34.02 and 34.67 MiB. These are not a computed peak, a declared resident-memory metric or a controlled before/after comparison. The raw trace remains private. CLI export failed with `Missing features`, so a complete exported peak/statistical summary is unavailable. Candidate P50/P95 remain unmeasured because this instrument does not provide synchronized touch and candidate-completion events. This clarification is not a new XCTest run, full keyboard acceptance or input-quality improvement.
+
+
+## Current-source assertion regression — 2026-10-29
+
+The unchanged private 2.6.1 (59) source was rerun with `bash scripts/check.command --unit-only` on macOS; exit status 0. Composition, local learning, membership snapshots, purchase cancellation/refund gating, cold-start readiness and the 8,454-reading reachability checks passed. These are production assertion suites, not a new public-package XCTest run or an Apple payment transaction. The fixed 819/277 evaluations above were not rerun and retain their original dates. This run does not establish phone touch acceptance, candidate latency or peak memory.

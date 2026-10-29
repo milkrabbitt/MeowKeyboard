@@ -31,3 +31,8 @@ After the compliance field was saved, a refreshed Asia-Pacific availability tabl
 
 
 **Authenticated follow-up (2026-10-29):** App Store Connect confirms 2.6 Ready for Distribution, with build 58 selected in the 2.6.1 Prepare for Submission draft and manual release retained. Regional availability lists 175 available territories. Official administrative records now show the company subject, website and iOS app registrations approved; these administrative approvals do not mean Apple organization conversion is complete. No new build, review submission or release was performed.
+
+
+## Authenticated draft recheck — 2026-10-29
+
+App Store Connect was independently inspected: version 2.6 remains Ready for Distribution; 2.6.1 remains Prepare for Submission with build 58 selected and manual release selected. No review submission or release was performed. Local build 59 retains build 58 membership changes and adds the separately documented input-resource/reading fixes. A fresh command-line Release Archive failed in asset compilation because the local CoreSimulator runtime service was unavailable; this is not distribution validation, and build 59 is not claimed uploaded. A complete GUI Release Archive subsequently succeeded for the unchanged app and extension, both 2.6.1 (59). Xcode subsequently reported that 2.6.1 (59) successfully passed all App Store validation checks. This is not an upload or review submission; the saved App Store Connect draft still selects build 58. The current-source assertion regression is recorded in [TESTING.md](TESTING.md).
