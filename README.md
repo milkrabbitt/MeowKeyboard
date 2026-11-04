@@ -42,7 +42,7 @@ Purchases and verification belong to the main app; the keyboard extension reads 
 
 Production records and public-example validation are intentionally separated. Historical evaluations are not a new validation of the public package or a current release. See [TESTING.md](TESTING.md).
 
-Release candidate 2.6.1 (56), recorded on 2026-10-09, adds bounded local repair candidates for some mistyped but valid Pinyin and fixes a modeled overlapping-keypress loss. Candidate Top-5 coverage improves on internal synthetic cohorts while the original first three candidates are preserved in the unpersonalized comparisons; many errors remain unresolved. Production regressions and a complete Release build passed. Device installation and main-app launch are confirmed. User-reported manual checks covered four input/editing interaction groups, with cursor-drag smoothness still a concern. A limited idle-extension memory trace is available; iPhone candidate latency and typing-load memory remain unmeasured. [Engineering evidence](docs/ENGINEERING_EVIDENCE.md) separates these records from public-package tests and App Store status.
+The November 3 development checkpoint focuses on responsive composition, an original cat theme collection, and a more compact subscription entry. The fixed 819-case Pinyin and 277-case T9 evaluations retained their previous ranking scores. [Development notes](docs/DEVELOPMENT_UPDATE_2026-11-03.md) describe the changes and their validation scope.
 
 ## Engineering Challenges
 
@@ -57,11 +57,7 @@ Release candidate 2.6.1 (56), recorded on 2026-10-09, adds bounded local repair 
 
 As rechecked through Apple’s public storefront lookup on 2026-10-29, version 2.6 is listed on the [US App Store](https://apps.apple.com/us/app/id6813336672) and the [China mainland App Store](https://apps.apple.com/cn/app/id6813336672). This confirms public listing visibility in those two storefronts; an on-device download transaction was not tested. As verified in App Store Connect on 2026-10-27, version 2.6 remains Ready for Distribution and the 2.6.1 draft still selects build 58. Local development build 59 is separate and has not been uploaded. No new review submission or release was performed. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
-**Development checkpoint (2026-10-10):** local 2.6.1 (57) includes bounded cursor-drag movement and deferred candidate/preview refresh during dragging. Production unit regressions and the full iOS Release build passed. Build 57 is installed on the development phone. The user reports some improvement in cursor dragging and provisionally accepts the current behavior, but smoothness remains insufficient; further cursor tuning is paused. As verified on 2026-10-12, build 57 has passed distribution validation and uploaded successfully; Apple processing is complete and build 57 is selected in the saved 2.6.1 draft. These changes do not modify the input engine or the public Swift examples.
-
-**Membership follow-up (2026-10-12):** development build 58 fixes a silent purchase failure when the product is unavailable and separates cold-start membership presentation from price loading. Product requests now coalesce, time out with retry feedback, and reject stale replies. Existing subscription terms and keyboard entitlements are unchanged. Production assertion regressions passed; two StoreKitTest XCTest cases passed on a physical iPhone. The real Sandbox purchase sheet was displayed; the owner subsequently confirmed successful Sandbox purchase and membership unlock. This is not a new public-package test or an App Store release.
-
-**Latest development check (2026-10-27):** private source remains 2.6.1 (59), matching its saved source snapshot. Xcode confirms build 59 on the connected development iPhone. Historical build-59 records cover single-character pronunciation reachability and T9 candidate identity fixes; common-input ranking and typo recovery remain below the internal quality targets. Phone candidate latency and typing-load memory are still unmeasured. See [TESTING.md](TESTING.md) for dated results and limitations.
+The November 3 changes are part of local development build 60. The historical shipping record covers earlier development builds and the App Store draft separately. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md).
 
 ## Repository Scope
 
