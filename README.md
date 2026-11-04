@@ -4,6 +4,13 @@ A Swift-based Chinese keyboard for iOS.
 
 MeowKeyboard is a commercial iOS keyboard project built around Pinyin, T9 input, local personalization, Keyboard Extension integration, and StoreKit 2 entitlement handling.
 
+<p>
+  <img src="screenshots/calico-keyboard-development.jpg" width="280" alt="MeowKeyboard calico theme in the system Keyboard Extension" />
+  <img src="screenshots/cat-themes-development.jpg" width="280" alt="Original cat theme collection" />
+</p>
+
+Development build 61 in the iOS simulator, using the actual system Keyboard Extension and a private test host. [Capture scope](docs/ASSET_MANIFEST.md).
+
 ## Features
 
 - Full Pinyin, Jianpin, mixed Pinyin, and T9 input
@@ -42,7 +49,7 @@ Purchases and verification belong to the main app; the keyboard extension reads 
 
 Production records and public-example validation are intentionally separated. Historical evaluations are not a new validation of the public package or a current release. See [TESTING.md](TESTING.md).
 
-The November 3 development checkpoint focuses on responsive composition, an original cat theme collection, and a more compact subscription entry. The fixed 819-case Pinyin and 277-case T9 evaluations retained their previous ranking scores. [Development notes](docs/DEVELOPMENT_UPDATE_2026-11-03.md) describe the changes and their validation scope.
+The November 3 build 61 checkpoint adds candidate-touch stability and bounded spelling recovery. The fixed 819-case Pinyin and 277-case T9 evaluations retained their previous ranking scores. A separate daily-input validation set exposes substantial remaining weaknesses in long Jianpin, mixed Pinyin, and typo recovery. [Development notes](docs/DEVELOPMENT_UPDATE_2026-11-03.md) describe the changes and their validation scope.
 
 ## Engineering Challenges
 
@@ -57,11 +64,11 @@ The November 3 development checkpoint focuses on responsive composition, an orig
 
 As rechecked through Apple’s public storefront lookup on 2026-10-29, version 2.6 is listed on the [US App Store](https://apps.apple.com/us/app/id6813336672) and the [China mainland App Store](https://apps.apple.com/cn/app/id6813336672). This confirms public listing visibility in those two storefronts; an on-device download transaction was not tested. As verified in App Store Connect on 2026-10-27, version 2.6 remains Ready for Distribution and the 2.6.1 draft still selects build 58. Local development build 59 is separate and has not been uploaded. No new review submission or release was performed. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
-The November 3 changes are part of local development build 60. The historical shipping record covers earlier development builds and the App Store draft separately. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md).
+The latest November 3 changes are part of local development build 61. Selected visible-key input checks passed in the actual simulator system extension. A local StoreKit UI purchase completed; the final automated StoreKit lifecycle suite still has unresolved failures. Physical-device installation and end-to-end phone performance remain unverified for this build. App Store Connect was not checked during this development checkpoint. The historical shipping record covers earlier development builds and the App Store draft separately. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md).
 
 ## Repository Scope
 
-This public repository contains selected implementation examples, architecture documentation, testing methodology, and no product screenshots.
+This public repository contains selected implementation examples, architecture documentation, testing methodology, and product screenshots.
 
 The complete production source code, dictionaries, ranking models, commercial assets, and App Store production configuration remain private.
 

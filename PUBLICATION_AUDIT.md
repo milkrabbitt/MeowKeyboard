@@ -170,3 +170,24 @@ A. PASS: two Markdown files only; dated shipping status and this audit entry. No
 ## 2026-10-29 current-source regression and draft evidence
 
 A. PASS: this incremental patch changes three Markdown files only. It separates freshly executed assertion tests from historical evaluations, public-package XCTest, device acceptance and Apple payment testing. No production implementation, raw logs, paths, account details or credentials are included. B. OPEN: existing historical identity residue remains unchanged. C. Pending ordinary push and remote-content verification; page rendering and CI are not newly claimed.
+
+
+## 2026-11-03 build 61 documentation checkpoint
+
+### A. Current incremental content
+
+PASS — the current documentation diff and relative links were checked. No production source, dictionary, model, artwork source, raw trace, internal path, company filing material, contact information, account credential or signing asset is included. Current attribution remains Milkyway42. Public Swift examples and tests are unchanged, and no new public-package XCTest or CI result is claimed.
+
+PASS — the update separates fixed regression, synthetic typo diagnostics, the independently authored set's first comparison and its later observed-regression use. It records both recovered and lost typo targets, the unresolved Jianpin weakness and the difference between modeled selection cost and UI evidence. Selected actual-extension simulator checks are reported separately from phone performance and physical-device installation. The one-sample Apple comparison retains its uncontrolled-learning limitation. The final two-case StoreKit integration failure and its distinction from successful local UI and pure-state checks remain explicit. The dated App Store record is retained, with no new backend check claimed.
+
+NOT APPLICABLE — no third-party implementation or resources are added by this documentation patch. External license links describe the inspected project files, without claiming a complete commercial-product legal audit.
+
+PASS — four owner-authorized actual product captures were visually checked. JPEG EXIF content is limited to pixel dimensions, with no GPS, account, contact or private input data. Capture context and original-artwork boundaries are recorded in ASSET_MANIFEST.md. No production asset source is included.
+
+### B. Existing history
+
+OPEN — historical identity residue remains unchanged. This patch does not rewrite history or claim complete historical privacy clearance.
+
+### C. Publication verification
+
+NOT VERIFIED before publication. The final committer must verify the intended identity, staged file allowlist, remote branch, ordinary push and remote read-back. No new GitHub browser rendering, language-statistics or CI result is claimed.

@@ -1,3 +1,14 @@
-# Asset Manifest
+# Asset manifest
 
-No screenshots, production art, audio, fonts, theme assets, lexical data, or databases are included in this public repository.
+These are actual November 3, 2026 development captures from the iPhone 17 Pro simulator (iOS 26.3). Keyboard views use the system Keyboard Extension inside the app’s DEBUG-only practice host. They are not physical-device performance evidence or current App Store screenshots.
+
+| File | Content | Source and public basis | Processing and checks |
+|---|---|---|---|
+| calico-keyboard-development.jpg | Calico keyboard and huan candidates | Owner-authorized product UI capture; original code-drawn cat portrait | Original capture bytes; visually inspected; no private text or account details; EXIF limited to pixel dimensions; no GPS or identity fields |
+| cat-themes-development.jpg | Six original cat themes and earlier theme choices | Owner-authorized product UI capture; app-owned vector artwork | Original capture bytes; visually inspected; no contact or device identifier; EXIF limited to pixel dimensions; no GPS or identity fields |
+| t9-reading-development.jpg | T9 selecting the huan reading | Owner-authorized actual extension capture; invented test input | Original capture bytes; visually inspected; no private content; EXIF limited to pixel dimensions; no GPS or identity fields |
+| membership-local-test.jpg | Compact membership entry | Owner-authorized app UI, local Xcode StoreKit configuration | Original capture bytes; visually inspected; test price/eligibility display is not a purchase receipt or universal trial offer; EXIF limited to pixel dimensions; no GPS or identity fields |
+
+All captures are JPEG, 906 × 1930. The filename extension matches the actual media format. No screenshots contain login pages, messages, certificates, local paths, IDs or server information. System chrome is visible as part of the captured test environment. No generated image is presented as a working UI.
+
+Theme artwork source, fonts, audio, dictionaries, models and production asset bundles are not redistributed. This review covers the included captures, not the whole commercial product’s legal status.
