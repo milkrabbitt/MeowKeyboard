@@ -191,3 +191,17 @@ OPEN — historical identity residue remains unchanged. This patch does not rewr
 ### C. Publication verification
 
 NOT VERIFIED before publication. The final committer must verify the intended identity, staged file allowlist, remote branch, ordinary push and remote read-back. No new GitHub browser rendering, language-statistics or CI result is claimed.
+
+## 2026-11-07 development-workflow documentation
+
+### A. Current incremental content
+
+PASS — documentation, one dated note, asset manifest, two actual component PNG captures and audio-file ignore patterns reviewed. Relative file links resolve. Scoped new-text checks found no internal paths, private contact details, filing credentials or tokens. PNG EXIF contains orientation, resolution and dimensions only, with no personal/GPS/text metadata. Public examples remain unchanged. Private runner source, input-engine implementation, dictionaries, original recordings, sound-production intermediates, signing materials, raw logs and personal records are excluded. Infrastructure checks are separated from input quality, device acceptance and App Store status.
+
+### B. Existing history
+
+OPEN: historical identity residue remains outside this update. No history rewrite or claim of complete historical privacy clearance.
+
+### C. Post-push verification
+
+NOT VERIFIED before publication. No new remote SHA, browser-rendering result, CI result or public-package test run is claimed.

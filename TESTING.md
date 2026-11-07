@@ -128,3 +128,47 @@ The tool-observed **Memory column snapshots** were 22.27, 34.02 and 34.67 MiB. T
 ## Current-source assertion regression — 2026-10-29
 
 The unchanged private 2.6.1 (59) source was rerun with `bash scripts/check.command --unit-only` on macOS; exit status 0. Composition, local learning, membership snapshots, purchase cancellation/refund gating, cold-start readiness and the 8,454-reading reachability checks passed. These are production assertion suites, not a new public-package XCTest run or an Apple payment transaction. The fixed 819/277 evaluations above were not rerun and retain their original dates. This run does not establish phone touch acceptance, candidate latency or peak memory.
+
+## Development-workflow fault tests — 2026-11-07
+
+The private coding-worker runner passed 20 Python unittest checks, with 0 failures. These checks exercise staged edits, independent verification failure, allowed-file enforcement, preservation of concurrent source changes, no-progress rejection, dependency ordering, resource limits, process-group timeout, captured-log limits, pause/resume, killed-runner recovery, competing workspace locks, interrupted apply recovery, and unsafe-path rejection. They test development infrastructure, not Pinyin quality, Swift behavior or an iPhone keyboard.
+
+The workspace lock coordinates cooperating runners; source preimage checks reject changes when another editor has changed the snapshot. It is not an operating-system prohibition on unrelated editors. Token usage is recorded when the worker reports it, so per-call usage can remain unknown after interruption; wall-time and call limits are separately enforced.
+
+No public Swift example changed or was retested for this documentation update. Existing engine and device figures retain their original dataset, date and platform scope. Real-device candidate latency, combined theme/sound/input load, and final audio listening acceptance are not established by these infrastructure tests.
+
+## Next-word prediction repair — 2026-11-07
+
+The first real coding-worker repair was checked by an independent, unchanged regression probe and the existing production assertion suites on macOS; both exited 0. The probe initially had four failures, then zero after integration. The accepted changes restore corpus predictions for adjacent Chinese suffixes following punctuation, Latin text or emoji, and prevent repeated learned suggestions from taking up the bounded unique-result quota. Persistence, ranking-order and boundary controls remain checked. No production dictionary or fixed evaluation fixture was changed.
+
+A separate structural acceptance set contains 32 existing-dictionary prefixes and six prefix-boundary variants each. It was frozen before observing the repair and was not supplied to the worker. Its before/after result was **0/192 to 192/192** for preserving the same suggestions after a preceding boundary. Suppression after a terminal boundary remained **192/192**. This is a structural property test, not Chinese semantic Top-1/3/5 accuracy, a user study or a phone interaction score.
+
+Optimized macOS single-run prediction measurements, 320 warm calls per category:
+
+| Prediction call | Baseline P50 / P95 / P99 (ms) | Repaired P50 / P95 / P99 (ms) |
+|---|---|---|
+| Bare Chinese suffix | 0.0089 / 0.0166 / 0.0344 | 0.0095 / 0.0153 / 0.0163 |
+| Prefix boundary plus same suffix | 0.0014 / 0.0024 / 0.0032 | 0.0095 / 0.0152 / 0.0157 |
+
+The defective boundary path was artificially cheap because it returned no corpus suggestions. Restoring its work increases that timing; no general speedup is claimed. First-call times were 4.34 ms and 9.24 ms in these separate processes; this is not a controlled extension-cold-start comparison. These observations do not measure touch feedback, host insertion, rendering, phone memory or the complete input chain. The fixed 819/277 ranking evaluation was subsequently rerun on the November 7 engine snapshot, with unchanged results listed below. No new iOS installation, StoreKit result or release is established by these engine checks.
+
+## Fixed ranking and host-callback checks — 2026-11-07
+
+The fixed macOS engine evaluation completed against a saved source snapshot:
+
+| Dataset | Cases | Top-1 | Top-3 | Top-5 | Versus build 61 |
+|---|---:|---:|---:|---:|---|
+| 26-key Pinyin | 819 | 48.72% | 60.07% | 63.98% | Unchanged |
+| T9 | 277 | 62.09% | 76.17% | 79.78% | Unchanged |
+
+These remain below the internal 75%/90%/95% targets. Restored next-word suggestions are not represented as a gain in this Pinyin-ranking dataset.
+
+A separate controller repair preserves displayed candidate buttons, candidate generation, horizontal scroll position and expanded held selection when an idle host callback reports the same document, context and selection. Four frozen failures became **4/4 passes**; all **3 original changed-host controls** and **10 additional document/selection/explicit-refresh/mode/learning controls** passed. The probe compiles the real copied controller into an isolated UIKit simulator app with a fake text-document proxy and synthetic control events. It is neither BB physical input nor system Keyboard Extension host acceptance. A replay using the then-current theme source without an image override also retained these results.
+
+All six compatible native-material theme profiles are integrated in source. The final isolated UIKit layout matrix produced 189 frames across six cats plus the base theme at native 428 pt and constrained 375/932 pt widths. Geometry and hit-bound checks passed; selected frames were visually inspected. Golden Shaded's final warmth adjustment has 27 additional layout frames. The widths represent component layouts, not verified physical orientation or iPad behavior. The fixture uses the real copied controller with a fake host; it is not physical touch or system-extension acceptance.
+
+A resource-completeness audit found the initial combined-input fixture omitted 13 files from the keyboard resource phase, including six engine data files. That run's quality and performance are invalid as complete product-path evidence; raw failures remain recorded. Fixture assembly now follows the actual project resource list with hash verification. Independent read-only checks confirmed all 25 resource files and all 12 copied source files matched the production snapshot. Corrected base and Orange runs each preserved the same three diagnostic compositions, returned their expected first choices and had no candidate timeout; the rare-character observation disappeared without a production scoring patch. The compiler invocation was unoptimized. This is component state/load evidence with a fake host and existing sound playback, not Release performance, physical touch, BB memory or audio listening acceptance. The three authored texts are not an independent quality benchmark.
+
+Optimized (`-O`) component replays then used the complete resource list. Each theme replay preserved 103 paced button target-actions across three authored sequences, with correct final first candidates and no timeout. Timeline instrumentation separates ordinary 40 ms paced input, candidate settling, reset work and an intentionally synchronous 31-key cancellation burst. Observed normal-input display-link P95 was 33.48 ms for the base theme and 32.75 ms for Orange; observed maxima were 56.83 and 46.99 ms. These are one simulator run per theme, not touch-to-visible latency, a statistically established speedup, iPhone performance or a claim that frame budgets are met. The unpaced stress burst and terminal tail remain separately recorded, not discarded from the evidence.
+
+The local 2.6.1 (62) Release archive passed main-app/extension version, signing and resource checks and was installed on BB. This is development signing, not Apple distribution validation or upload. Main-app launch was blocked by the device lock. A separate 15-second idle capture of the previously running build-61 keyboard on iPhone 15 Pro/iOS26.7.1 yielded 13 exported physical-footprint samples spanning 15.89–16.53 MiB; these are observed idle samples, not build-62 data, typing-load peak or candidate latency.

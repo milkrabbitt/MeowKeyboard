@@ -5,11 +5,11 @@ A Swift-based Chinese keyboard for iOS.
 MeowKeyboard is a commercial iOS keyboard project built around Pinyin, T9 input, local personalization, Keyboard Extension integration, and StoreKit 2 entitlement handling.
 
 <p>
-  <img src="screenshots/calico-keyboard-development.jpg" width="280" alt="MeowKeyboard calico theme in the system Keyboard Extension" />
-  <img src="screenshots/cat-themes-development.jpg" width="280" alt="Original cat theme collection" />
+  <img src="screenshots/orange-material-development.png" width="280" alt="Orange Tabby native keyboard material in the simulator component harness" />
+  <img src="screenshots/native-theme-picker-development.png" width="280" alt="Native material theme selection in the simulator component harness" />
 </p>
 
-Development build 61 in the iOS simulator, using the actual system Keyboard Extension and a private test host. [Capture scope](docs/ASSET_MANIFEST.md).
+November 7 development-source renders from an isolated iOS simulator harness using the real UIKit keyboard components. These captures use a fake text host; they are not phone touch or current App Store screenshots. [Capture scope](docs/ASSET_MANIFEST.md).
 
 ## Features
 
@@ -51,6 +51,8 @@ Production records and public-example validation are intentionally separated. Hi
 
 The November 3 build 61 checkpoint adds candidate-touch stability and bounded spelling recovery. The fixed 819-case Pinyin and 277-case T9 evaluations retained their previous ranking scores. A separate daily-input validation set exposes substantial remaining weaknesses in long Jianpin, mixed Pinyin, and typo recovery. [Development notes](docs/DEVELOPMENT_UPDATE_2026-11-03.md) describe the changes and their validation scope.
 
+The November 7 source changes restore next-word suggestions after text boundaries, prevent duplicate learned suggestions from consuming result slots, and preserve candidate interaction during redundant host callbacks. Fixed Pinyin/T9 ranking scores remain unchanged. Six compatible native-material cat themes are integrated in source. Isolated UIKit checks cover layouts and stable hit bounds; selected frames were visually reviewed. Full device input and performance acceptance remain separate. [Current development scope](docs/DEVELOPMENT_UPDATE_2026-11-07.md) separates engine checks, isolated UIKit integration and pending device acceptance.
+
 ## Engineering Challenges
 
 - Keeping raw input and displayed Pinyin separate so literal submission preserves user-entered casing and spacing.
@@ -64,12 +66,14 @@ The November 3 build 61 checkpoint adds candidate-touch stability and bounded sp
 
 As rechecked through Apple’s public storefront lookup on 2026-10-29, version 2.6 is listed on the [US App Store](https://apps.apple.com/us/app/id6813336672) and the [China mainland App Store](https://apps.apple.com/cn/app/id6813336672). This confirms public listing visibility in those two storefronts; an on-device download transaction was not tested. As verified in App Store Connect on 2026-10-27, version 2.6 remains Ready for Distribution and the 2.6.1 draft still selects build 58. Local development build 59 is separate and has not been uploaded. No new review submission or release was performed. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md) for the scoped shipping record.
 
-The latest November 3 changes are part of local development build 61. Selected visible-key input checks passed in the actual simulator system extension. A local StoreKit UI purchase completed; the final automated StoreKit lifecycle suite still has unresolved failures. Physical-device installation and end-to-end phone performance remain unverified for this build. App Store Connect was not checked during this development checkpoint. The historical shipping record covers earlier development builds and the App Store draft separately. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md).
+The latest November 3 changes are part of local development build 61. Selected visible-key input checks passed in the actual simulator system extension. A local StoreKit UI purchase completed; the final automated StoreKit lifecycle suite still has unresolved failures. A separate November 4 device record confirms build 61 installation and main-app launch. This does not establish software-keyboard touch acceptance or end-to-end phone performance. App Store Connect was not checked during this development checkpoint. The historical shipping record covers earlier development builds and the App Store draft separately. See [APP_STORE_SHIPPING.md](APP_STORE_SHIPPING.md).
+
+Local development build 62 was fully archived and installed on the development phone on November 7. Signed main-app/extension bundles and packaged resources were checked. Installation is separate from keyboard touch acceptance; the device was locked when main-app launch was attempted. No App Store upload or review submission was performed.
 
 ## Repository Scope
 
 This public repository contains selected implementation examples, architecture documentation, testing methodology, and product screenshots.
 
-The complete production source code, dictionaries, ranking models, commercial assets, and App Store production configuration remain private.
+This repository does not distribute the complete production implementation, dictionary collection, ranking resources or App Store configuration. Third-party materials and their licensed derivatives retain their applicable license rights; omission from this repository does not override those terms.
 
 © 2026 Milkyway42. Selected examples and documentation are provided for reference. Production source code and commercial assets are not open-sourced. All rights reserved unless otherwise noted.

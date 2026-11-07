@@ -14,3 +14,14 @@ DerivedData/
 *.log
 .env
 work/
+
+# User recordings and private sound-production intermediates
+*.m4a
+*.wav
+*.aiff
+*.aif
+*.caf
+*.mp3
+*.aac
+*.flac
+*.ogg

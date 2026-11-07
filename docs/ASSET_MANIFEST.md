@@ -12,3 +12,14 @@ These are actual November 3, 2026 development captures from the iPhone 17 Pro si
 All captures are JPEG, 906 × 1930. The filename extension matches the actual media format. No screenshots contain login pages, messages, certificates, local paths, IDs or server information. System chrome is visible as part of the captured test environment. No generated image is presented as a working UI.
 
 Theme artwork source, fonts, audio, dictionaries, models and production asset bundles are not redistributed. This review covers the included captures, not the whole commercial product’s legal status.
+
+## November 7 native-material source checkpoint
+
+Two additional PNG captures (856 × 756) render the actual UIKit keyboard components in an isolated iOS simulator app with a fake document proxy. They show the Orange Tabby keyboard and updated theme picker, including the final warm Golden Shaded palette. They are not full system-extension touch, physical-phone, landscape/iPad acceptance or current App Store screenshots. No generated keyboard image replaces native controls.
+
+| File | Content | Review |
+|---|---|---|
+| orange-material-development.png | Native Orange Tabby keycaps, toolbar, candidate surface and prepared original cat accent | Actual component capture; readable controls; invented test suggestions; no private input or identifiers |
+| native-theme-picker-development.png | Native previews derived from the same material definitions, with classic choices retained below | Actual component capture; original owner-authorized artwork; no account, contact or device information |
+
+The published files are rendered product views. Original art, complete production resources, four user recordings and private test traces remain outside this repository. These two captures do not change the scope of the four earlier dated JPEG captures.
